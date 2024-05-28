@@ -56,7 +56,6 @@ def edit_movie(movie_id):
         movie.rating = float(form.rating.data)
         movie.review = form.review.data
 
-        all_movies = Movie.query.order_by(Movie.ranking).all()
         db.session.commit()
         print("Successfully updated the movie!")
         return redirect(url_for('home'))
@@ -83,7 +82,7 @@ def delete_movie(movie_id):
     return redirect(url_for('home'))
 
 
-@app.route("/add_movie", methods=["GET","POST"])
+@app.route("/add_movie", methods=["GET", "POST"])
 def add_movie():
     form = FindMovieForm()
     if form.validate_on_submit():
@@ -96,7 +95,7 @@ def add_movie():
             "accept": "application/json",
             "Authorization": f"Bearer {config.TMDB_API_KEY}"
         }
-        params= {
+        params = {
             "query": movie.title,
             "include_adult": "false",
             "language": "en-US",
