@@ -1,0 +1,6 @@
+SECRET_KEY = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+SQLALCHEMY_DATABASE_URI= 'sqlite:///movies.db'
+TMDB_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MWRjNzhmYjE2ZGRhYTE5YjEzMjRkNTkyMmJlMDk0YSIsInN1YiI6IjY2NGU0NTdlMzU0MzE5Y2ZhMjliOWIxOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zRap1PMS442e-SMbvvrXwt6_cnrx8zqEaTZUV5yCTos"
+SELECTED_MOVIE = 'https://api.themoviedb.org/3/movie'
+TMDB_IMAGE_URL = 'https://image.tmdb.org/t/p/w500'
+TMDB_AUTH_TOKEN = "81dc78fb16ddaa19b1324d5922be094a"
